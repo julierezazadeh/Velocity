@@ -1,0 +1,49 @@
+﻿@import 'settings.scss';
+@import 'tools.scss';
+
+.sidebar {
+    background-color: #FAFAFA;
+}
+.sidebar__menu {
+    padding: 35px 10px;
+    list-style-type: none;
+}
+.sidebar__item {
+    padding-bottom: 1rem;
+}
+.selected {
+    font-weight: 500;
+    height: 2px;
+    border-bottom: 2px solid #00B6DE;
+}
+.form-control {
+    height: 40px;
+}
+.sidebar__link {
+    color: black;
+}
+
+//dropdown displayed only in tablet < 
+.dropdown-menu {
+    width: 174px;
+    background-color: $purple;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.dropdown-item{
+    padding: 10px 15px;
+}
+.dropdown-item:hover {
+    color: white;
+    background: $purple;
+}
+
+
+//hiding sidebar from desktop
+@include breakpoint(tablet) {
+    .sidebar {
+        display: none;
+    }
+    .sidebar__dropdown {
+        padding: 15px;
+    }
+}

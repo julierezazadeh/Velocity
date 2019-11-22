@@ -1,0 +1,66 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+    <div class="row">
+        <div class="col-md-2 sidebar">
+            <ul class="sidebar__menu">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link selected" >{Tab Title}</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">Attachments</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="component col-sm-10">
+
+            <!--hidden in desktop-->
+            <div class="sidebar__dropdown">
+                <select class="form-control">
+                    <option selected>{Tab Title}</option>
+                    <option>Attachments</option>
+                </select>
+            </div>
+            <!--end of hidden element-->
+
+            <div class="component__block">
+                <div class="component__title">{Component Title}</div>
+                <hr />
+
+                <form class="form">
+                    <div class="form__group">
+                        <label for="field1">{Field Title}</label>
+                        <input type="text" class="form-control">
+                        <br />
+
+                        <label for="field2">{Field Title}</label>
+                        <textarea class="form-control" rows="5"></textarea>
+                        <br />
+
+                        <label for="dropdown1">{Field Title}(Required)</label>
+                        <select class="form-control">
+                            <option selected disabled>Select....</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                        <br />
+
+                        <label for="dropdown2">{Field Title}(Required)</label>
+                        <select class="form-control">
+                            <option selected disabled>Select....</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                        <br />
+
+                        <label for="date">{Field Title}</label>
+                        <input type="date" class="form-control date__field" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+

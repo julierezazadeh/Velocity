@@ -1,0 +1,50 @@
+﻿/*********************
+VARIABLES
+*********************/
+/*********************
+REM TO PX CONVERSTION
+*********************/
+/*********************
+BREAKPOINTS
+*********************/
+/*********************
+REM TO PX CONVERSTION
+*********************/
+.sidebar {
+  background-color: #FAFAFA; }
+
+.sidebar__menu {
+  padding: 35px 10px;
+  list-style-type: none; }
+
+.sidebar__item {
+  padding-bottom: 1rem; }
+
+.selected {
+  font-weight: 500;
+  height: 2px;
+  border-bottom: 2px solid #00B6DE; }
+
+.form-control {
+  height: 40px; }
+
+.sidebar__link {
+  color: black; }
+
+.dropdown-menu {
+  width: 174px;
+  background-color: #535CA6;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+
+.dropdown-item {
+  padding: 10px 15px; }
+
+.dropdown-item:hover {
+  color: white;
+  background: #535CA6; }
+
+@media (max-width: 50em) {
+  .sidebar {
+    display: none; }
+  .sidebar__dropdown {
+    padding: 15px; } }

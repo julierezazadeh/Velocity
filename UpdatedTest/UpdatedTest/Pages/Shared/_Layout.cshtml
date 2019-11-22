@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - UpdatedTest</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/scss/sidebar.css" />
+    <link rel="stylesheet" href="~/scss/component.css" />
+    <link rel="stylesheet" href="~/scss/settings.css" />
+    <link rel="stylesheet" href="~/scss/subheader.css" />
+    <link rel="stylesheet" href="~/scss/calendar.css" />
+    <link rel="stylesheet" href="~/scss/tools.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="subheader">
+        <span class="subheader__title">{Category Title}({State})</span>
+        <div class="btn-group">
+            <button type="button" class="btn btn--primary">{Transition Title}</button>
+            <button type="button" class="btn btn--primary">{Transition Title}</button>
+            <button type="button" class="btn btn--primary">Attach</button>
+            <button type="button" class="btn btn--primary">Save</button>
+            <button type="button" class="btn btn--primary">More <i class="fa fa-chevron-down"></i></button>
+        </div>
+
+        <!-- Hidden on desktop-->
+        <div class="dropdown">
+            <button class="btn btn--primary dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+            <div class="dropdown-menu dropdown-menu-right arrow-top">
+                <button class="dropdown-item" type="button">{Transition Title}</button>
+                <button class="dropdown-item" type="button">{Transition Title}</button>
+                <button class="dropdown-item" type="button">Attach</button>
+                <button class="dropdown-item" type="button">Save</button>
+                <button class="dropdown-item" type="button">More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

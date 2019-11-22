@@ -1,0 +1,34 @@
+﻿[
+  {
+    "outputFile": "wwwroot/scss/conversion-block.css",
+    "inputFile": "wwwroot/scss/conversion-block.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/settings.css",
+    "inputFile": "wwwroot/scss/settings.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/sidebar.css",
+    "inputFile": "wwwroot/scss/sidebar.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/component.css",
+    "inputFile": "wwwroot/scss/component.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/subheader.css",
+    "inputFile": "wwwroot/scss/subheader.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/variables.css",
+    "inputFile": "wwwroot/scss/variables.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/calendar.css",
+    "inputFile": "wwwroot/scss/calendar.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/tools.css",
+    "inputFile": "wwwroot/scss/tools.scss"
+  }
+]

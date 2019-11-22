@@ -1,0 +1,59 @@
+﻿@import 'settings.scss';
+@import 'tools.scss';
+
+.subheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.subheader__title {
+    height: 27px;
+    width: 293px;
+    color: #1C1D33;
+    font-size: size(27);
+    font-weight: 500;
+}
+.btn-group {
+    width: 620px;
+    height: 40px;
+}
+.arrow-top {
+    margin-top: 40px;
+}
+.arrow-top:after {
+    content: " ";
+    position: absolute;
+    right: 30px;
+    top: -15px;
+    border-top: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid $purple;
+}
+
+@include breakpoint(tablet) {
+    .btn-group {
+        display: none;
+    }
+    .dropdown-menu {
+        background-color: $purple;
+    }
+    .dropdown-item {
+        color: #fff;
+        font-weight: 500;
+        font-size: size(16);
+    }
+}
+@include breakpoint(tablet) {
+    .btn-group {
+        display: none;
+    }
+    .dropdown-menu {
+        background-color: $purple;
+    }
+    .dropdown-item {
+        color: #fff;
+        font-weight: 500;
+        font-size: size(16);
+    }
+}

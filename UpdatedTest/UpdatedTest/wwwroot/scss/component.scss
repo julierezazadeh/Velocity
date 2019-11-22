@@ -1,0 +1,80 @@
+﻿@import 'settings.scss';
+
+.btn--primary {
+    background: $purple;
+    font-weight: 500;
+    font-size: size(16);
+    border: none;
+    min-width: 34px;
+    color: #fff;
+    margin-right: 2px;
+
+    &.btn--primary:hover {
+        color: white;
+    }
+}
+.component {
+    background: #EEEEEE;
+    height: 100vh;
+    min-height: 100vh;
+}
+.component__block {
+    margin: auto;
+    margin-top: 30px;
+    height: 669px;
+    width: 830px;
+    background-color: #FFFFFF;
+}
+.component__title {
+    color: #1C1D33;
+    font-size: size(23);
+    font-weight: 500;
+    padding: 21px 24px;
+}
+hr {
+    background-color: #EEE;
+    margin: 0;
+}
+.form {
+    width: 500px;
+    margin: auto;
+    padding-top: 15px;
+}
+
+/*********************
+COMPONENT MEDIA QUERIES
+*********************/
+@include breakpoint(desktop) {
+    .component__block {
+        width: auto;
+    }
+}
+
+@include breakpoint(laptop) {
+    .dropdown {
+        display: none;
+    }
+    .sidebar__dropdown {
+        display: none;
+    }
+}
+
+@include breakpoint(tablet) {
+    .col-sm-10 {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .form {
+        width: auto;
+    }
+    .component {
+        padding: 0;
+    }
+    .component__block {
+        margin-top: 0px;
+        padding: 15px;
+    }
+}
+
+
+    
