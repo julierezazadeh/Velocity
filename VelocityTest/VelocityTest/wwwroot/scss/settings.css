@@ -1,0 +1,24 @@
+﻿/*********************
+VARIABLES
+*********************/
+/*********************
+REM TO PX CONVERSTION
+*********************/
+.btn--primary {
+  background: #545CA5;
+  font-weight: 500;
+  font-size: 0.875em;
+  border: none;
+  min-width: 75px;
+  color: #fff; }
+  .btn--primary.btn--primary:hover {
+    background: #545CA5;
+    color: white; }
+
+.btn--remove {
+  font-size: 0.875em;
+  color: #C65458 !important; }
+
+/*********************
+BREAKPOINTS
+*********************/

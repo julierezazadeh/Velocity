@@ -1,0 +1,68 @@
+﻿@import 'settings.scss';
+@import 'tools.scss';
+
+.section {
+    background: #EEEEEE;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.component {
+    width: 75%;
+    margin: auto;
+}
+
+.conversion {
+    margin-top: 35px;
+    background: #fff;
+}
+
+.conversion__header {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px 25px;
+}
+
+.conversion__header--title {
+    font-size: size(20);
+    font-weight: 500;
+}
+
+.conversion__item {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    border-top: 1.5px solid #F7F7F7;
+    padding: 10px 25px;
+}
+
+.conversion__list {
+    padding: 0px;
+    list-style-type: none;
+}
+
+@include breakpoint(tablet) {
+    .col-sm-10 {
+        flex: auto;
+        max-width: 100%;
+    }
+
+    .component {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .section {
+        padding: 0;
+    }
+
+    .conversion {
+        margin-top: 0px;
+    }
+
+    .conversion__info {
+        padding: 15px;
+    }
+}

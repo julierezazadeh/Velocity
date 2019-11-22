@@ -1,0 +1,75 @@
+﻿/*********************
+VARIABLES
+*********************/
+/*********************
+REM TO PX CONVERSTION
+*********************/
+.btn--primary {
+  background: #545CA5;
+  font-weight: 500;
+  font-size: 0.875em;
+  border: none;
+  min-width: 75px;
+  color: #fff; }
+  .btn--primary.btn--primary:hover {
+    background: #545CA5;
+    color: white; }
+
+.btn--remove {
+  font-size: 0.875em;
+  color: #C65458 !important; }
+
+/*********************
+BREAKPOINTS
+*********************/
+/*********************
+REM TO PX CONVERSTION
+*********************/
+.section {
+  background: #EEEEEE;
+  height: 100vh;
+  min-height: 100vh; }
+
+.component {
+  width: 75%;
+  margin: auto; }
+
+.conversion {
+  margin-top: 35px;
+  background: #fff; }
+
+.conversion__header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px 25px; }
+
+.conversion__header--title {
+  font-size: 1.25em;
+  font-weight: 500; }
+
+.conversion__item {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  border-top: 1.5px solid #F7F7F7;
+  padding: 10px 25px; }
+
+.conversion__list {
+  padding: 0px;
+  list-style-type: none; }
+
+@media (max-width: 50em) {
+  .col-sm-10 {
+    flex: auto;
+    max-width: 100%; }
+  .component {
+    width: 100%;
+    margin-top: 0; }
+  .section {
+    padding: 0; }
+  .conversion {
+    margin-top: 0px; }
+  .conversion__info {
+    padding: 15px; } }

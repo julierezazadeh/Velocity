@@ -1,0 +1,39 @@
+﻿@import 'settings.scss';
+@import 'tools.scss';
+
+.sidebar {
+    background-color: #FAFAFA;
+}
+
+.sidebar__menu {
+    padding: 35px 10px;
+}
+
+.sidebar__item {
+    padding-bottom: 2rem;
+    list-style-type: none;
+}
+
+.sidebar__dropdown {
+    display: none;
+}
+
+.sidebar__link {
+    color: #000;
+
+    &.sidebar__link:hover {
+        color: #000;
+    }
+}
+
+@include breakpoint(tablet) {
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar__dropdown {
+        display: block;
+        padding: 15px;
+        width: 100%;
+    }
+}
